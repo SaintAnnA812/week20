@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #choice,
+        #number {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Кого или что будем искать?</h1>
+    <div class="container">
+        <label for="choice"></label>
+        <select name="choice" id="choice">
+            <option class="option" value="people">Людей</option>
+            <option class="option" value="planets">Планеты</option>
+            <option class="option" value="films">Фильмы</option>
+        </select>
+
+
+        <input type="number" id="number">
+        <button id="btn">Вперёд!</button><br />
+
+        <div id="answer"></div>
+        <p id="error"></p>
+        <div id="resultContainer"></div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
